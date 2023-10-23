@@ -36,12 +36,9 @@
                                           <div class="col-md-3 prdct-grid">
                                               <div class="product-fade">
 													<div class="product-fade-wrap">
-                                                        <div id="product-image" class="owl-carousel owl-theme">
+                                                        <div id="product-image" class="">
                                                             <div class="item"><img src="<?php echo 'images/' . $row['image'];?>" alt="" class="img-responsive"></div>
-                                                            <div class="item"><img src="<?php echo 'images/' . $row['image'];?>" alt="" class="img-responsive"></div>
-                                                            <div class="item"><img src="<?php echo 'images/' . $row['image'];?>" alt="" class="img-responsive"></div>
-                                                            <div class="item"><img src="<?php echo 'images/' . $row['image'];?>" alt="" class="img-responsive"></div>
-                                                            <div class="item"><img src="<?php echo 'images/' . $row['image'];?>" alt="" class="img-responsive"></div>
+                                                            
                                                         </div>
 														<div class="product-fade-ct">
                                                             <div class="product-fade-control">
@@ -51,7 +48,7 @@
                                                                     <a href=""><i class="fa fa-search"></i></a>
                                                                 </div>
                                                                 <div class="to-right">
-                                                                    <div id="product-control" class="owl-carousel owl-theme clearfix">
+                                                                    <div id="product-control" class="">
                                                                         <div class="item"><div class="bullets"></div></div>
                                                                         <div class="item"><div class="bullets"></div></div>
                                                                         <div class="item"><div class="bullets"></div></div>
