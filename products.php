@@ -33,7 +33,7 @@
                                         while($row = mysqli_fetch_assoc($runquery)){
                                             
                                     ?>
-                                          <div class="col-md-3 ">
+                                          <div class="col-md-4 col-lg-2 col-sm-12">
                                               <div class="product-fade">
 													<div class="product-fade-wrap">
                                                         <div id="product-image" class="">
@@ -42,13 +42,13 @@
 														<div class="product-fade-ct">
                                                             <div class="product-fade-control">
                                                                 <div class="to-left">
-                                                                    <a href=""><i class="fa fa-heart"></i></a>
-                                                                    <a href=""><i class="fa fa-retweet"></i></a>
-                                                                    <a href=""><i class="fa fa-search"></i></a>
+                                                                    <a href="" style="font-size: 50%; margin-top: -10px;"><i class="fa fa-heart"></i></a>
+                                                                    <a href=""style="font-size: 50%;"><i class="fa fa-retweet"></i></a>
+                                                                    <a href=""style="font-size: 50%;"><i class="fa fa-search"></i></a>
                                                                 </div>
                                                                
                                                                 <div class="clearfix"></div>
-                                                                <a href="" class="btn btn-to-cart"><span class="bag"></span><span>Add To cart</span><div class="clearfix"></div></a>
+                                                                <a href="" class="btn btn-to-cart"style="font-size: 60%; width: 75%; height: 30%;"><span class="bag"></span><span>Add To cart</span><div class="clearfix"></div></a>
                                                             </div>
                                                             
 														</div>
