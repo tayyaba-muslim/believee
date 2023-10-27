@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 23, 2023 at 08:50 AM
+-- Generation Time: Oct 27, 2023 at 09:49 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -55,8 +55,42 @@ CREATE TABLE `cosmetics` (
 
 INSERT INTO `cosmetics` (`id`, `title`, `image`, `price`, `status`) VALUES
 (1, 'Lipstick', 'cos1.webp', '$19', 1),
-(2, 'Red Nailpaint', 'cos2.webp', '$5', 1),
-(3, 'Blusher', 'cos3.jpg', '$6', 1);
+(2, 'Brush kit', 'cos2.jpg', '$5', 1),
+(3, 'eyeshade', 'cos4.webp', '$6', 1),
+(4, 'Lipstick', 'cos5.webp', '$10', 1),
+(5, 'Beauty kit', 'cos6.jpg', '$10', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `index`
+--
+
+CREATE TABLE `index` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `price` varchar(255) NOT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `index`
+--
+
+INSERT INTO `index` (`id`, `title`, `image`, `price`, `status`) VALUES
+(1, 'Earing\r\n', 'pro1.webp', '$12', 1),
+(2, 'Earing', 'pro2.jpg', '$10', 1),
+(3, 'Earing', 'pro3.jpg', '$14', 1),
+(4, 'Cosmetics', 'pro4.jpg', '$10', 1),
+(5, 'Brush Kit', 'pro5.jpg', '$13', 1),
+(6, 'Man\'s Cleanser	', 'pro6.jpg', '$17', 1),
+(7, 'Skin Care', 'pro7.jfif', '$10', 1),
+(8, 'Skin Care', 'pro8.webp', '$19', 1),
+(9, 'Blusher', 'pro9.jpg', '$22', 1),
+(10, 'Shiner Blusher\r\n', 'pro10.jpg', '$20', 1),
+(11, 'Eyeshades', 'pro11.webp', '$10', 1),
+(12, 'Eye Shadow', 'pro12.webp', '$19', 1);
 
 -- --------------------------------------------------------
 
@@ -77,13 +111,18 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `title`, `image`, `price`, `status`) VALUES
-(1, 'neckless', 'pro1.webp', '$12', 1),
+(1, 'Earing', 'pro1.webp', '$12', 1),
 (2, 'Earing', 'pro2.jpg', '$10', 1),
 (3, 'Earing', 'pro3.jpg', '$14', 1),
 (4, 'Cosmetics', 'pro4.jpg', '$10', 1),
 (5, 'Brush Kit', 'pro5.jpg', '$13', 1),
 (6, 'Man\'s Cleanser', 'pro6.jpg', '$17', 1),
-(7, 'Skin Care', 'pro7.jfif', '$10', 1);
+(7, 'Skin Care', 'pro7.jfif', '$10', 1),
+(8, 'Skin Care', 'pro8.webp', '$19', 1),
+(9, 'Blusher', 'pro9.jpg', '$22', 1),
+(10, 'Shiner Blusher', 'pro10.jpg', '$20', 1),
+(11, 'Eyeshades', 'pro11.webp', '$10', 1),
+(12, 'Eye Shadow', 'pro12.webp', '$19', 1);
 
 -- --------------------------------------------------------
 
@@ -123,6 +162,12 @@ ALTER TABLE `cosmetics`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `index`
+--
+ALTER TABLE `index`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
@@ -148,13 +193,19 @@ ALTER TABLE `admin_reg`
 -- AUTO_INCREMENT for table `cosmetics`
 --
 ALTER TABLE `cosmetics`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `index`
+--
+ALTER TABLE `index`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `user-register`
