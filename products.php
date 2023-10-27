@@ -3,7 +3,15 @@
  include('includes/config.php');
  ?>
  <html>
-
+                  <div class="content-offers" style="background:url(images/products.jpg); background-size: cover; margin-top:40px; height: 150px;">
+                
+                <div class="container">
+                    <div class="ct-offers">
+                        <div class="ct-offers-title" style="color: white; margin-left: 80px;">Our Products</div>
+                     
+                    </div>
+                </div>
+            </div>
               
               <div class="newest" id="newest">
                   <div class="container">
